@@ -1,0 +1,61 @@
+--------------------DOCKER FILE COMPONENTS-----------------------
+
+FROM :- It is used to define base operating system images (EX:-Ubuntu,centos,sonarqube).
+
+MAINTAINER :- It tells about author details (Who wrote the docker file and some author details).
+
+LABEL :- It is used to add the description about the image.
+
+COPY :- It is used to copy the files  from Docker host to Container.
+
+ADD :- It is also used to copy the files from Docker host to Containerl, it will also download the files from internet and send those files to container.
+
+RUN :- Used to execute the commands. ( we use this while creating the Image & While Building the docker file)
+
+CMD :- It is also used to EXEcute the commands. ( we use this while creating the Container / While Build the image & To start the Application)
+
+EXPOSE :- Used to publish the port Number.
+
+ARG :- It is used to define the variables. (We can't access the values inside the container) (We use this while creating the images)
+
+ENV :- It is used to define the variables. (We can access the values inside the container) (We use this while creating the conainer)
+
+ENTRY POINT :- Used to set a default path on a container.
+
+
+docker exec -it container name bash :- To enter into the container.
+
+docker ps :- To see the running containers
+
+docker ps -a :- To see the all containers
+
+docker run -itd -p 1234:80 --name container2 httpd
+
+docker stop conatiner1 :- To stop the container.
+
+docker start container1 :- to start the container.
+
+docker stop con2 cont3 :- To stop multiple containers at a time.
+
+docker start con2 cont3 :- To start multiple containers at a time.
+
+docker stop $(docker ps) :- It is used to stop all running Containers.
+
+docker start $(docker ps -a) :- It is used to start all running Containers.
+
+docker kill cont2 :- It is used to stop the container
+
+STOP ------> SIGTERM ---> Docker Daemon (it take time to stop)
+
+KILL ------>SIGKILL ----> Docker Daemon (Stop immediately)
+
+docker rm cont2 :- To remove the Container
+
+docker rm cont1 cont2 :- To remove multiple containers
+
+docker rm $(docker ps -a) :- To remove all containers.
+
+docker rename cont1 flm :- To change the container name
+
+/var/lib/docker/ :- Docker default path
+
