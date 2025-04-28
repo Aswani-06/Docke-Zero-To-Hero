@@ -1,0 +1,4 @@
+Create image
+docker login
+rename the docker image (docker tag image name dockerhub account name/repo name: tag name)
+docker push dockerhub account name/repo name: tag name
