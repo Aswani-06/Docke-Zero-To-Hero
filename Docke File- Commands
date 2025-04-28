@@ -73,5 +73,11 @@ docker image prune :- To remove dangling images (over ride images)
 
 docker rmi $(docker images) :- To remove all images.
 
+docker login :- To push image to docker hub (Enter your user name and password)
+
+docker tag image name  dockerhub name/dockerhub repo name:tag :- To create tag
+
+docker push dockerhub name/dockerhub repo name:tag :- To push image
+
 
 
