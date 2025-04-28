@@ -1,0 +1,6 @@
+docker network ls :- See list of networks
+docker network create name :- To create network
+docker network rm name :- To remove network
+docker network prune :- To remove un-used containers
+docker network inspect network-name :- To know comple details abot network
+docker run -itd --name app-cont --network app centos:- To create container with specific network
