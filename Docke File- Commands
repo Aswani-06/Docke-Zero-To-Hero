@@ -79,5 +79,13 @@ docker tag image name  dockerhub name/dockerhub repo name:tag :- To create tag
 
 docker push dockerhub name/dockerhub repo name:tag :- To push image
 
+docker inspect container name :- To get container full data
+
+docker network ls :- To see the list of networks
+
+docker network create network name :- To create custom network
+
+
+
 
 
