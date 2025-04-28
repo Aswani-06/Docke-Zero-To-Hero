@@ -14,13 +14,15 @@ RUN :- Used to execute the commands. ( we use this while creating the Image & Wh
 
 CMD :- It is also used to EXEcute the commands. ( we use this while creating the Container / While Build the image & To start the Application)
 
+ENTRY POINT :- Used to execute the commands while creating the container.
+
 EXPOSE :- Used to publish the port Number.
 
 ARG :- It is used to define the variables. (We can't access the values inside the container) (We use this while creating the images)
 
 ENV :- It is used to define the variables. (We can access the values inside the container) (We use this while creating the conainer)
 
-ENTRY POINT :- Used to set a default path on a container.
+WORKDIR :- Used to set a default path on a container.
 
 
 docker exec -it container name bash :- To enter into the container.
@@ -29,7 +31,7 @@ docker ps :- To see the running containers
 
 docker ps -a :- To see the all containers
 
-docker run -itd -p 1234:80 --name container2 httpd
+docker run -itd -p 1234:80 --name container2 httpd ("itd --> interactive terminal detach")
 
 docker stop conatiner1 :- To stop the container.
 
@@ -58,4 +60,18 @@ docker rm $(docker ps -a) :- To remove all containers.
 docker rename cont1 flm :- To change the container name
 
 /var/lib/docker/ :- Docker default path
+
+docker build -t ashu . --->To Build docker file ("." Means present working directory && "t- Tag")
+
+exit --> To comeout from container.
+
+docker build -t ashu . --build-arg=cloud=gcp :- To give variable values dynamically.
+
+docker container prune :- To remove all stopped containers
+
+docker image prune :- To remove dangling images (over ride images)
+
+docker rmi $(docker images) :- To remove all images.
+
+
 
