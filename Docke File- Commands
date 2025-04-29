@@ -35,6 +35,8 @@ docker run -itd -p 1234:80 --name container2 httpd ("itd --> interactive termina
 
 docker stop conatiner1 :- To stop the container.
 
+docker container prune :- To remove all stopped containers at a time.
+
 docker start container1 :- to start the container.
 
 docker stop con2 cont3 :- To stop multiple containers at a time.
