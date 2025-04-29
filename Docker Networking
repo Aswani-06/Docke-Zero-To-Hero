@@ -4,7 +4,8 @@ We have two types of registies they are
 
 --------------------------> Steps to follow image into Docker Hub/ECR <---------------------------
 
-Create Dcoker image
-Docker login
-Docker Rename
-Docker push
+developer code --> we create docker file 
+Build docker file ---> docker image
+rename the docker image
+docker login (credentials)
+docker push
