@@ -7,3 +7,7 @@ we can't share the data to another container inside the folder.
 we can't delete the volume.
 We can delete the folder.
 Inside the container we have volume inside it we have files and folders. If we lost our container even though we can access our volume.
+
+We can create volumes in 2 ways.
+1) command
+2)Docker file
