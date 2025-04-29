@@ -87,8 +87,6 @@ docker network ls :- To see the list of networks
 
 docker network create network name :- To create custom network
 
-docker volume  rm volume ID :- To remove volume
- docker volume prune :- To delete un-used volumes
 
 
 
