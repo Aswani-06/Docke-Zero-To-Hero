@@ -11,3 +11,6 @@ Inside the container we have volume inside it we have files and folders. If we l
 We can create volumes in 2 ways.
 1) command
 2)Docker file
+
+docker run -itd --name cont1 -v myvolume ubuntu
+docker run -itd --name cont2 --privilege=true --volumes-from contl ubuntu
