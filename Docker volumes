@@ -1,1 +1,9 @@
-Docker volumes are used to replicate the data b/w multiple containers.
+Docker volumes are used to share the data b/w multiple containers.
+When we create a container the volume will be created.
+In existing container we can't create volumes.
+volume is simply a directory inside our container.
+We can share the data to another container inside the volume.
+we can't share the data to another container inside the folder.
+we can't delete the volume.
+We can delete the folder.
+Inside the container we have volume inside it we have files and folders. If we lost our container even though we can access our volume.
