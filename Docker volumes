@@ -14,3 +14,6 @@ We can create volumes in 2 ways.
 
 docker run -itd --name cont1 -v myvolume ubuntu
 docker run -itd --name cont2 --privilege=true --volumes-from contl ubuntu
+docker volume  rm volume ID :- To remove volume
+docker volume prune :- To delete un-used volumes
+docker volume inspect volumeid :- To see comple information about volume
