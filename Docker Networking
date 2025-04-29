@@ -2,3 +2,9 @@ We have two types of registies they are
 --> Cloud based registry (Docker Hub, ECR "Elastic cloud registry",ACR "Azure cloud registry",GCR "Google cloud gegisty")
 --> Local base Registry ("Nexus,Jfrog,DTR")
 
+--------------------------> Steps to follow image into Docker Hub/ECR <---------------------------
+
+Create Dcoker image
+Docker login
+Docker Rename
+Docker push
