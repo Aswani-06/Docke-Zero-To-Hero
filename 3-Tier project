@@ -2,6 +2,28 @@ create an instance with (t2.medium).
 yum install git -y  :- Install git
 yum install docker -y && systemctl start docker :- To install & start docker.
 yum install java-1.8.0-openjdk maven -y  :-To install jav & maven
-git clone 
+git clone https://github.com/devops0014/dockerwebapp.git
+cd dockerwebapp
+git checkout master
+rm -rf compose/
 mvn clean package
-
+ll target
+cp -r target Docker-app
+cd docker-app
+rm -rf multistage
+docker  build -t app-img .
+docker images
+cd ..
+cd docker-db
+docker build -t db-img .
+("Inputs to take from "Data Base" team are ("DB Name and DB password and DB end point") )
+---->ALWAYS First create Data Base container<-----
+docker run -d --name devopsdb -p 3306:3306 db-image
+docker run -itd --name app-cont -p 8080:8080 --link devopsdb:mysqlcon app-image
+docker ps
+docker exec -it devopsdb bash :- To enter into container
+mysql -u root -p devopspassword :-To enter into the Db
+show databases; :-To see the list of data bases
+use accounts; :- To enter into perticular data base
+show tables; :-To see list of tables
+select * from users; :-To enter into the users table
