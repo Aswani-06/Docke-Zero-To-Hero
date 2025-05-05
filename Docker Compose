@@ -2,4 +2,25 @@ To create multiple services at a time.
 
 sudo -i
 yum install docker -y && systemctl start docker
+copy the compose file commands
+docker-compose version :-To check the docker compose version
+mkdir paytm
+cd paytm/
+vim compose.yml   ("docker-compose.yaml/compose.yml/compose.yaml")
+---
+version: "3"
+services:
+  movie:
+   container_name: cont1
+   image: shaikmustafa/cycle
+   ports:
+     - "8080:80"
 
+  Bank:
+   container_name: cont2
+   image: shaikmustafa/mygame
+   ports:
+    - "8030:80"
+
+docker-compose up -d :-To execute the compose file
+   
