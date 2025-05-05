@@ -2,4 +2,6 @@ create an instance with (t2.medium).
 yum install git -y  :- Install git
 yum install docker -y && systemctl start docker :- To install & start docker.
 yum install java-1.8.0-openjdk maven -y  :-To install jav & maven
+git clone 
+mvn clean package
 
