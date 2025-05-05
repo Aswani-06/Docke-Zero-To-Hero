@@ -23,4 +23,12 @@ services:
     - "8030:80"
 
 docker-compose up -d :-To execute the compose file
-   
+docker-compose ps :-To get the compose file based containers
+docker-compose images :- To get the compose file based images 
+docker-compose down :-To delete the compose file containers
+docker-compose stop :-To stop the containers
+docker-compose start :- To start the containers
+docker-compose logs :-To check the compose file container logs
+docker logd container name/id :- To check container logs
+docker-compose config :-To get the compose files
+docker-compose build :- To build the change file
