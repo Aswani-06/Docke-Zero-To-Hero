@@ -2,3 +2,24 @@ create a instance with t2 medium with 20gb volume
 yum install docker -y && systemctl start docker
 -----------> Multi stage docker file using Node js And decrease the image size <------------------
 
+yum install git -y
+git clone node js url
+cd nodejs
+rm -rf dockerfile
+
+FROM node:19-alpine as ash
+WORKDIR /myapp
+copy package*.json ./
+RUN npm install
+COPY . .
+CMD ["node", "index.js] / npm start
+
+FROM ash as devops
+RUN npm install --production
+COPY . .
+CMD npm start
+
+docker build -t image1 .
+docker run -itd --name cont1 -p 1234:80 image1
+
+Using multistage docker file we can decrease the docker image size.
