@@ -1,0 +1,4 @@
+create a instance with t2 medium with 20gb volume
+yum install docker -y && systemctl start docker
+-----------> Multi stage docker file using Node js And decrease the image size <------------------
+
