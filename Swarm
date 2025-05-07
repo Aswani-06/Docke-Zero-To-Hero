@@ -1,2 +1,6 @@
 By using docker sarm we creat single service in multiple servers.
-                       
+   docker swarm init
+docker node ls
+docker service create --name netflix --replicas 3 --publish 1234:80 shaikmustafa/netflix
+docker service ls
+
