@@ -1,0 +1,9 @@
+install git & Jenkins & Docker and start Docker
+Give permissions Chmod 777 ///var/run/docker.sock
+docker run -d --name sonar -p 9000:9000 sonarqube:lts-community
+docker ps
+sonarqube logins: username:- Admin, password:- Admin
+set password
+Go to manual ->project name-> setup
+Local->generate->continue->js->Linux
+Go to sonaqqube logo 
