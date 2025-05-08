@@ -7,3 +7,6 @@ set password
 Go to manual ->project name-> setup
 Local->generate->continue->js->Linux
 Go to sonaqqube logo 
+Install Trivy
+unzip the trivy file
+ mv trivy /usr/local/bin/
