@@ -1,2 +1,13 @@
-Cls:4
-first topic: Registry (create image push image to Docker hub) 
+Cls:4 (DOSKER HUb,ECR,DOCKER NETWORK)
+first topic: Registry (create image push image to Docker hub and ECR)        
+Docker Network:- (App to Db)
+docker run -itd --name cont1 centos
+docker inspect cont1
+docker network create app
+docker run -itd --name cont1 --network app image1
+docker network connect app db-cont
+container TO container 
+
+--------->CLS5<-------
+DOCKER VOLUMES
+       
