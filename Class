@@ -10,4 +10,5 @@ container TO container
 
 --------->CLS5<-------
 DOCKER VOLUMES
-       
+DOCKER RUN -ITD --NAME CONT1  -v /devops ubuntu
+ docker run -itd --name cont2 --privileged=true --volumes-from cont1 ubuntu      
