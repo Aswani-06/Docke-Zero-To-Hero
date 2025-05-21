@@ -19,5 +19,10 @@ docker volume create AShu
 cd /var/lib/docker/volume/Ashu/
 index.html
 <he>Hello world</h1>
-
 docker run -itd --name cont1 -p 1234:80 --mount source=Ashu,destination=/usr/share/nginx/html/ nginx
+volume ["/volume"] :-To create volume in Dockerfile
+
+------------------------------------------------------>CL6<---------------------------------------------------------------------------
+create instance as T2 large with 20GB volume
+
+Code--->Build--->Warfile---->Unit test ----->Docker file--->Image---->Container-->Tomcat Image (git,maven,java,Docker)
