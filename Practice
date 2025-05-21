@@ -1,0 +1,23 @@
+Cl:4 (DOSKER HUb,ECR,DOCKER NETWORK)
+first topic: Registry (create image push image to Docker hub and ECR)        
+Docker Network:- (App to Db)
+docker run -itd --name cont1 centos
+docker inspect cont1
+docker network create app
+docker run -itd --name cont1 --network app image1
+docker network connect app db-cont
+container TO container 
+
+----------------------------------------------------->CL5<-----------------------------------------------------
+DOCKER VOLUMES
+DOCKER RUN -ITD --NAME CONT1  -v /devops ubuntu
+ docker run -itd --name cont2 --privileged=true --volumes-from cont1 ubuntu      
+docker run -itd --name cont1 -p 1234:80 --v $(pwd):/usr/share/nginx/html/ nginx   :-Docker host to container data sharing through volume
+
+git hub----->clone to docker host server---------->create container with volume------>Application Deploy
+docker volume create AShu
+cd /var/lib/docker/volume/Ashu/
+index.html
+<he>Hello world</h1>
+
+docker run -itd --name cont1 -p 1234:80 --mount source=Ashu,destination=/usr/share/nginx/html/ nginx
