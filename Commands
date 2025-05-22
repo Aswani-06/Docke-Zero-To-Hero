@@ -31,3 +31,4 @@ docker volume create volume_name
 docker run -itd --name cont1  --volume /myvolume image1
 docker run -itd --name cont2 --previleged=true --volumes-from cont1 image1
 docker run -itd --name cont3 --mount source=myvolume,destination=/usr/share/nginx/html image1
+docker run -itd --name cont4 -p 1234:80 --v $(pwd):/usr/share/nginx/html/ nginx
