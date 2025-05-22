@@ -1,0 +1,33 @@
+Docker file commands:-
+
+docker build -t image_name bash
+docker images
+docker run -itd --name cont1 image1
+docker run -itd --name cont1 -p 1234:80 image1
+docker ps
+docker ps -a
+docker rmi image_name
+docker image prune
+docker rm cont1
+docker stop $(docker ps)
+docker kill $(docker ps)
+docker start $(docker ps -a)
+docker container prune
+
+Netwok commands:--
+
+docker network ls
+docker network create network_name
+docker run -itd --name cont1 --network app mage1
+docker network connect app db-cont
+docker network rm network_name
+docker network prune
+
+volumes commands:-
+
+docker volume ls
+docker volume create volume_name
+
+docker run -itd --name cont1  --volume /myvolume image1
+docker run -itd --name cont2 --previleged=true --volumes-from cont1 image1
+docker run -itd --name cont3 --mount source=myvolume,destination=/usr/share/nginx/html image1
