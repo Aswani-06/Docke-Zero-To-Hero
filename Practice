@@ -30,3 +30,4 @@ docker run -itd --name app-cont -p 8080:8080 --link devopsdb:mysqlcon app-img :-
 
 ------------------------------------------->CL7<------------------------------
 DOCKER COMPOSE
+Task:- write Docker compose add volume  and Network                                                                                                                                                                                                                                                       
