@@ -27,3 +27,6 @@ create instance as T2 large with 20GB volume
 
 Code--->Build--->Warfile---->Unit test ----->Docker file--->Image---->Container-->Tomcat Image (git,maven,java,Docker)
 docker run -itd --name app-cont -p 8080:8080 --link devopsdb:mysqlcon app-img :-To create container with adding db-cont
+
+------------------------------------------->CL7<------------------------------
+DOCKER COMPOSE
